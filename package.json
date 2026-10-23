@@ -5,8 +5,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "npx serve .",
-    "start": "npx serve .",
-    "build": "echo 'Static portfolio ready for deployment'"
+    "start": "npx serve ."
   },
   "repository": {
     "type": "git",

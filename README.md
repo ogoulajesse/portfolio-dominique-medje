@@ -3,6 +3,7 @@
 
 ![Aperçu du Portfolio](portfolio_preview.png)
 
+[![Déployer sur Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fogoulajesse%2Fportfolio-dominique-medje)
 [![Statut](https://img.shields.io/badge/Statut-En%20poste%20%26%20Disponible-10B981?style=for-the-badge)](https://linkedin.com/in/dominiquemedje)
 [![Spécialisation](https://img.shields.io/badge/OIF%20D--CLIC-Projets%20360%C2%B0-FF5E3A?style=for-the-badge)](assets/docs/CV_Dominique_MEDJE.pdf)
 [![ODD](https://img.shields.io/badge/ODD%203-Sant%C3%A9%20%26%20Bien--%C3%AAtre-00A651?style=for-the-badge)](https://www.un.org/sustainabledevelopment/fr/health/)
@@ -52,11 +53,49 @@ Portfolio web dynamique haut de gamme de **Mahuna Raphaël Dominique MEDJE**, al
 
 ---
 
+## ⚡ Déploiement sur Vercel (Recommandé)
+
+Le projet intègre un fichier `vercel.json` pré-configuré (en-têtes de sécurité HTTP, politiques de cache CDN haute vitesse pour les assets, et URLs propres) ainsi qu'un `package.json` standard.
+
+### Option A — Déploiement en 1 Clic (Le plus simple)
+Cliquez sur le bouton ci-dessous pour importer et déployer automatiquement le projet sur votre tableau de bord Vercel :
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fogoulajesse%2Fportfolio-dominique-medje)
+
+### Option B — Via le Dashboard Vercel
+1. Connectez-vous sur [vercel.com](https://vercel.com).
+2. Cliquez sur **Add New... > Project**.
+3. Importez le dépôt GitHub `ogoulajesse/portfolio-dominique-medje`.
+4. Laissez les réglages par défaut (Framework Preset : *Other / Static*).
+5. Cliquez sur **Deploy**. En moins de 15 secondes, votre portfolio est en ligne avec HTTPS et CDN mondial !
+
+### Option C — Via Vercel CLI
+```bash
+# Dans le dossier portfolio :
+vercel
+# Pour déployer directement en production :
+vercel --prod
+```
+
+---
+
+## 🌐 Déploiement sur GitHub Pages (Alternative)
+
+1. Rendez-vous dans les **Settings** de votre dépôt GitHub.
+2. Cliquez sur l'onglet **Pages** dans le menu latéral gauche.
+3. Sous **Build and deployment > Source**, choisissez **Deploy from a branch**.
+4. Sélectionnez la branche `main` et le dossier `/ (root)`, puis cliquez sur **Save**.
+5. Votre portfolio sera accessible en ligne à l'adresse :
+   `https://ogoulajesse.github.io/portfolio-dominique-medje/`
+
+---
+
 ## 💻 Stack Technologique
 
 - **HTML5 sémantique** (Standard W3C, méta-données Open Graph / SEO).
 - **CSS3 moderne** (Variables CSS, Grid, Flexbox, Glassmorphism, animations fluides).
 - **JavaScript Vanilla ES6+** (Performances maximales, 0 dépendance npm requise, compatibilité universelle).
+- **Vercel Edge Ready** (Fichier `vercel.json` avec en-têtes de sécurité nosniff, cache CDN optimisé).
 
 ---
 
@@ -65,12 +104,14 @@ Portfolio web dynamique haut de gamme de **Mahuna Raphaël Dominique MEDJE**, al
 ```text
 portfolio/
 ├── index.html                      # Page d'accueil interactive du portfolio
+├── vercel.json                     # Configuration Vercel (headers, cache CDN, cleanUrls)
+├── package.json                    # Métadonnées et scripts de démarrage Vercel
 ├── CV_Dominique_MEDJE.html         # Version HTML autonome du CV
 ├── CV_Dominique_MEDJE.pdf          # CV exécutif officiel au format PDF
 ├── portfolio_preview.png           # Capture de prévisualisation du portfolio
 ├── generate_cv.py                  # Script Python source de compilation du CV
 ├── README.md                       # Documentation officielle
-├── .gitignore                      # Règles d'exclusion Git
+├── .gitignore                      # Règles d'exclusion Git & Vercel
 ├── css/
 │   └── style.css                   # Feuilles de styles et design tokens
 ├── js/
@@ -86,17 +127,6 @@ portfolio/
         ├── dominique_portrait.jpg  # Photo professionnelle (Section À Propos)
         └── ...
 ```
-
----
-
-## 🌐 Déploiement sur GitHub Pages (En 1 minute)
-
-1. Rendez-vous dans les **Settings** de votre dépôt GitHub.
-2. Cliquez sur l'onglet **Pages** dans le menu latéral gauche.
-3. Sous **Build and deployment > Source**, choisissez **Deploy from a branch**.
-4. Sélectionnez la branche `main` et le dossier `/ (root)`, puis cliquez sur **Save**.
-5. Votre portfolio sera accessible en ligne à l'adresse :
-   `https://<votre-compte-github>.github.io/<nom-du-repo>/`
 
 ---
 

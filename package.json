@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-dominique-medje",
+  "version": "1.0.0",
+  "description": "Portfolio web dynamique de Mahuna Raphaël Dominique MEDJE | Santé Publique & Gestion de Projets 360°",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "build": "echo 'Static portfolio ready for deployment'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ogoulajesse/portfolio-dominique-medje.git"
+  },
+  "keywords": [
+    "portfolio",
+    "sante-publique",
+    "gestion-de-projets",
+    "parakou",
+    "benin",
+    "oif-dclic"
+  ],
+  "author": "Mahuna Raphaël Dominique MEDJE",
+  "license": "MIT"
+}
